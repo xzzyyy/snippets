@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"tuple": "cpp"
+		},
+		"terminal.integrated.profiles.windows": {
+			"cygwin64": {
+				"path": "C:\\cygwin64\\bin\\bash.exe",
+				"args": [
+					"--login"
+				]
+			}
+		},
+		"terminal.integrated.defaultProfile.windows": "cygwin64",
+		"cmake.generator": "MinGW Makefiles"
+	}
+}

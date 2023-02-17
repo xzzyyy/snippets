@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "tuple": "cpp"
+    },
+    "terminal.integrated.profiles.windows": {
+        "cygwin64": {
+          "path": "C:\\cygwin64\\bin\\bash.exe",
+          "args": ["--login"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "cygwin64",
+    "cmake.configureOnOpen": false
+}
