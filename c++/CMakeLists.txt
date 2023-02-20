@@ -36,9 +36,6 @@ add_executable(typename_dep_scope typename_dep_scope.cpp)
 add_executable(std_move std_move.cpp)
 set_property(TARGET std_move PROPERTY CXX_STANDARD 14)
 
-add_executable(int.luxoft_WorldQuant int.luxoft_WorldQuant.cpp)
-set_property(TARGET int.luxoft_WorldQuant PROPERTY CXX_STANDARD 11)
-
 add_executable(binary_search binary_search.cpp instr_functions.c)
 set_property(TARGET binary_search PROPERTY CXX_STANDARD 17)
 set_source_files_properties(binary_search.cpp PROPERTIES COMPILE_FLAGS -finstrument-functions)
