@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16.3)
 
 project(code_snippets)
-set(CMAKE_CXX_STANDARD 98)
+# set(CMAKE_CXX_STANDARD 98)        # TODO rm
 
 add_executable(abs_vs_std_abs abs_vs_std_abs.cpp)
 add_executable(adl adl.cpp)
@@ -32,6 +32,7 @@ add_executable(templated_class templated_class.cpp instr_functions.c)
 add_executable(temporary_not_bind_to_nonconst_ref temporary_not_bind_to_nonconst_ref.cpp)
 add_executable(typeid typeid.cpp)
 add_executable(typename_dep_scope typename_dep_scope.cpp)
+add_executable(cores_num cores_num.cpp)
 
 add_executable(std_move std_move.cpp)
 set_property(TARGET std_move PROPERTY CXX_STANDARD 14)
@@ -47,7 +48,7 @@ add_executable(shared_ptr shared_ptr.cpp instr_functions.c)
 set_property(TARGET shared_ptr PROPERTY CXX_STANDARD 11)
 set_source_files_properties(shared_ptr.cpp PROPERTIES COMPILE_FLAGS -finstrument-functions)
 
-find_package(Boost REQUIRED COMPONENTS log)
-add_executable(exc_data exc_data.cpp)
-target_link_libraries(exc_data Boost::log)
-set_property(TARGET exc_data PROPERTY CXX_STANDARD 20)
+# find_package(Boost REQUIRED COMPONENTS log)
+# add_executable(exc_data exc_data.cpp)
+# target_link_libraries(exc_data Boost::log)
+# set_property(TARGET exc_data PROPERTY CXX_STANDARD 20)
